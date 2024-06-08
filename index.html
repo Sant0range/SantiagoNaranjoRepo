@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="nav" >
+    <h1>SANTIAGO NARANJO</h1>
+    <h3 class="span loader">
+      <span class="m">W</span>
+      <span class="m">E</span>
+      <span class="m">B</span>
+      <span class="m">&nbsp;</span>
+      <span class="m">D</span>
+      <span class="m">E</span>
+      <span class="m">V</span>
+      <span class="m">E</span>
+      <span class="m">L</span>
+      <span class="m">O</span>
+      <span class="m">P</span>
+      <span class="m">E</span>
+      <span class="m">R</span>
+    </h3>
+    <div class="nav-container">
+      <a class="nav-tab" href="#tab-svelte">SVELTE</a>
+      <a class="nav-tab" href="#tab-esbuild">ESBUILD</a>
+      <a class="nav-tab" href="#tab-next">NEXT.JS</a>
+      <a class="nav-tab" href="#tab-typescript">TYPESCRIPT</a>
+      <a class="nav-tab" href="#tab-vite">VITE</a>
+      <span class="nav-tab-slider"></span>
+    </div>
+ <div id="particles-js"></div>
+  </section>
+  <main class="main">
+    <section class="slider" id="tab-svelte">
+      <h1>SVELTE</h1>
+      <h2>another frontend JS framework</h2>
+    </section>
+    <section class="slider" id="tab-esbuild">
+      <h1>ESBUILD</h1>
+      <h2>an extremely fast JavaScript bundler</h2>
+    </section>
+    <section class="slider" id="tab-next">
+      <h1>NEXT.JS</h1>
+      <h2>framework for Production</h2>
+    </section>
+    <section class="slider" id="tab-typescript">
+      <h1>TYPESCRIPT</h1>
+      <h2>giving you better tooling at any scale</h2>
+    </section>
+    <section class="slider" id="tab-vite">
+      <h1>VITE</h2>
+      <h2>a frontend build tool</h2>
+    </section>
+  </main>
+  <script src="particles.min.js"></script>
+  <script>
+    particlesJS(
+        {
+  "particles": {
+    "number": {
+      "value": 29,
+      "density": {
+        "enable": true,
+        "value_area": 710.2328774690454
+      }
+    },
+    "color": {
+      "value": "#03dac6"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 4
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.24852886943415603,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 12.181158184520175,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+    )
+  </script>
+</body>
+</html>
