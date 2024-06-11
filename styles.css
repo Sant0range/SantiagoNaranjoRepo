@@ -97,19 +97,20 @@ img{
 }
 
 .aboutbtn {
-  display: flex;
-  flex-direction: row;
   margin-left: 63px;
   margin-top: 3%;
 }
 
-
+.button-link {
+  text-decoration: none;
+  display: flex;
+}
 
 .button {
   margin-left: 7px;
   margin-right: 3px;
   position: relative;
-  width: 19%;
+  width: 21%;
   height: 50px;
   align-items: center;
   cursor: pointer;
@@ -129,7 +130,6 @@ img{
 .button__icon {
   transition: all 0.5s ease;
 }
-
 
 .button .button__icon {
   position: absolute;
@@ -166,7 +166,6 @@ button:hover {
 .button:active .button__icon {
   background-color: #03dac6;
 }
-
 
 
 
