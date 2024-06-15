@@ -92,12 +92,16 @@ body {
   transition: left 0.3s ease;
 }
 
-img{
+.img {
   height: 35vw;
   width: auto;
   border-radius: 3%;
+  transition: transform 0.3s ease;
 }
 
+.img:hover {
+  transform: translateY(-10px);
+}
 
 .button-link {
   text-decoration: none;
@@ -251,6 +255,7 @@ button:hover {
 
 
 /* social buttoms end */
+
 .card {
   width: auto;
   display: flex;
@@ -312,11 +317,12 @@ button:hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   height: 150vh;
    position: relative;
-   background: #1e1f26;
    text-align: center;
+   background: #1e1f26e7;
    padding: 0 2em;
+   padding-top: 100px;
  } 
 
 .slider h1 {
@@ -372,6 +378,105 @@ a {
     font-size: 3vw;
   }
 }
+
+/*Skils*/
+
+.skills-section{
+padding-top: 20px;
+}
+
+.skills-container{
+display: grid;
+grid-tempLate-columns: repeat(5, 1fr);
+justify-content:center;
+align-items:center;
+text-align: center;
+grid-gap:1rem;
+padding: 1rem 80px;
+font-size: 1.2rem;
+}
+
+.skills-box{
+padding: 1rem;
+cursor:pointer;
+}
+
+.skills-box:hover > .skills-title:after, 
+.skills-box:hover > .skills-title:before {
+  
+background-color: #03dac6;
+transition: .5s;
+width: 120px;
+}
+
+.skills-box:hover .skills-img{
+  transform: translateY(-10px);
+  background-color: #e6d7c5;
+}
+
+.skills-title{
+display:flex;
+flex-direction: column;
+align-items:center;
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+position: relative;
+}
+
+
+.skills-title:before{
+content: '';
+position:absolute;
+bottom: 0;
+width:90px;
+height:4px;
+border-radius: 0 2px 2px 0;
+z-index: 3;
+background-color: #128C7E;
+}
+
+.skills-icons{
+width:50px;
+height: 50px;
+z-index:2;
+}
+
+.skills-img{
+width:90px;
+height:90px;
+position: relative;
+background-color: #1e1f26;
+display:flex;
+justify-content:center;
+align-items:center;
+transition: .5s;
+border: 2px solid #191a20;
+box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.774);
+}
+
+
+.skills-title h3{
+color: #faebd7;
+margin-top: 0.5rem;
+}
+
+/* Skills End*/
+
+@media screen and (max-width:990px){
+ .skills-container{
+ grid-tempLate-columns: repeat(2, 1fr);
+ padding: 2rem 50px;
+ }
+}
+
+@media screen and (max-width:650px){
+ .skills-container{
+ grid-tempLate-columns:2fr;
+ padding: 2rem 50px;
+ }
+}
+
+
 
 @media only screen and (min-width: 360px) {
   .slider h1 {
