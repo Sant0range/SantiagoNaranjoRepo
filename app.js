@@ -109,14 +109,14 @@ class NavigationPage {
     {
       "particles": {
         "number": {
-          "value": 160,
+          "value": 45,
           "density": {
             "enable": true,
             "value_area": 800
           }
         },
         "color": {
-          "value": "#faebd7"
+          "value": "#03dac6"
         },
         "shape": {
           "type": "circle",
@@ -134,12 +134,12 @@ class NavigationPage {
           }
         },
         "opacity": {
-          "value": 1,
-          "random": true,
+          "value": 0.5,
+          "random": false,
           "anim": {
-            "enable": true,
+            "enable": false,
             "speed": 1,
-            "opacity_min": 0,
+            "opacity_min": 0.1,
             "sync": false
           }
         },
@@ -148,14 +148,14 @@ class NavigationPage {
           "random": true,
           "anim": {
             "enable": false,
-            "speed": 4,
-            "size_min": 0.3,
+            "speed": 40,
+            "size_min": 0.1,
             "sync": false
           }
         },
         "line_linked": {
-          "enable": false,
-          "distance": 150,
+          "enable": true,
+          "distance": 112.2388442605866,
           "color": "#ffffff",
           "opacity": 0.4,
           "width": 1
@@ -164,14 +164,14 @@ class NavigationPage {
           "enable": true,
           "speed": 1,
           "direction": "none",
-          "random": true,
+          "random": false,
           "straight": false,
           "out_mode": "out",
           "bounce": false,
           "attract": {
             "enable": false,
             "rotateX": 600,
-            "rotateY": 600
+            "rotateY": 1200
           }
         }
       },
@@ -180,7 +180,7 @@ class NavigationPage {
         "events": {
           "onhover": {
             "enable": true,
-            "mode": "repulse"
+            "mode": "bubble"
           },
           "onclick": {
             "enable": true,
@@ -196,14 +196,14 @@ class NavigationPage {
             }
           },
           "bubble": {
-            "distance": 250,
-            "size": 0,
-            "duration": 2,
-            "opacity": 0,
+            "distance": 85.26810729164123,
+            "size": 6,
+            "duration": 4,
+            "opacity": 8,
             "speed": 3
           },
           "repulse": {
-            "distance": 95.90409590409591,
+            "distance": 200,
             "duration": 0.4
           },
           "push": {
