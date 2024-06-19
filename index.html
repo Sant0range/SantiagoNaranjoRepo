@@ -261,7 +261,7 @@
         <div class="project-card">
           <div>
             <a href="https://live-ricetta.pantheonsite.io/" target="_blank">
-              <img src="images/waterfallpage.png" alt="Waterfall page, my first drupal project" class="imgproject">
+              <img src="images/waterfall.png" alt="Waterfall page, my first drupal project" class="imgproject">
             </a>
           </div>
           <div class="project-text">
@@ -276,7 +276,7 @@
         <div class="project-card">
           <div>
             <a href="https://live-ricetta.pantheonsite.io/" target="_blank">
-              <img src="images/waterfallpage.png" alt="Waterfall page, my first drupal project" class="imgproject">
+              <img src="images/waterfaal.png" alt="Waterfall page, my first drupal project" class="imgproject">
             </a>
           </div>
           <div class="project-text">
@@ -297,7 +297,27 @@
     </section>
     <section class="slider" id="contact">
       <h1>CONTACT</h1>
-      <h2>giving you better tooling at any scale</h2>
+      <div>
+          <div class="form-container">
+            <div class="form">
+              <form name="contact" method="POST" data-netlify="true">
+                <span class="heading">Get in touch</span>
+                <input placeholder="Name" type="text" class="input">
+                <input placeholder="Email" id="mail" type="email" class="input">
+                <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                <p style="display: none;">
+                  <label>¡No llenar este campo si eres humano! <input name="bot-field"></label>
+               </p>
+                <div class="button-container">
+                <button class="send-button" type="submit">Send</button>
+                <div class="reset-button-container">
+                    <div id="reset-btn" class="reset-button">Reset</div>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+      </div>
     </section>
   </main>
   <footer>

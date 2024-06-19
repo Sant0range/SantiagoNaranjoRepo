@@ -336,7 +336,6 @@ button:hover {
    position: relative;
    text-align: center;
    background: #1e1f26e7;
-   
    padding: 0 2em;
  } 
 
@@ -529,8 +528,10 @@ margin-top: 0.5rem;
 
 .imgproject{
   border-radius: 4%;
+  border: 3px solid #faebd7;
   width: 95%;
-  height: 200%;
+  height: 140px;
+  
   
   transition: all 0.5s ease;
 }
@@ -569,7 +570,6 @@ margin-top: 0.5rem;
   justify-content: center;
   overflow: hidden;
   transition-duration: .3s;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.774);
   border-radius: 5%;
   
   color: #faebd7;
@@ -594,9 +594,124 @@ margin-top: 0.5rem;
   fill: #faebd7;
 }
 
-
-
 /*Projects section end*/
+
+/*Contact form*/
+
+
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #191a20;
+  padding: 30px;
+  border-left: 5px solid #03dac6;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+  display: block;
+  color: #faebd7;
+  font: 1.5rem "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  width: 100%;
+  background-color: #1e1f26;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+
+  color: #faebd7;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  font-style: normal;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #03dac6;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #1e1f26;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+
+  color: #faebd7;
+  font-family: "ROBOTO", sans-serif;
+  font-size: 1vw;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  font-style: normal;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #03dac6;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #128C7E;
+  padding: 10px;
+  color: #faebd7;
+  
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #128C7E;
+  color: #03dac6;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #128C7E);
+  
+  flex-basis: 30%;
+  
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #03dac6;
+  
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  background: #191a20;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #128C7E;
+  color: #faebd7;
+}
+/*contact form end*/
 
 @media screen and (max-width:990px){
  .skills-container{
