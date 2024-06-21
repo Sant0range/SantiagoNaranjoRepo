@@ -595,6 +595,24 @@ margin-top: 0.5rem;
 
 /*Projects section end*/
 
+
+
+.contact-container{
+  display: grid;
+grid-tempLate-columns: repeat(2, 1fr);
+align-items:center;
+text-align: center;
+margin-left: 20%;
+}
+
+.cardsocial2 {
+
+display:flex;
+grid-gap:1rem;
+padding: 0.5rem 200px;
+}
+
+
 /*Contact form*/
 
 
