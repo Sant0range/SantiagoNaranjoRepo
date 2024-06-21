@@ -582,7 +582,6 @@ margin-top: 0.5rem;
   transition-duration: .5s;
   
   transform: translateY(-3px);
-  border-bottom:  2px solid  #faebd7;
 }
 
 .websvg{
@@ -675,6 +674,7 @@ margin-top: 0.5rem;
   padding: 10px;
   color: #faebd7;
   
+  border: none; /* Ensuring no border for button */
   letter-spacing: 0.1rem;
   text-align: center;
   font-weight: 500;
@@ -694,7 +694,8 @@ margin-top: 0.5rem;
   
 }
 
-.form-container .form .button-container .reset-button-container .reset-button {
+.form-container .form .button-container .reset-button-container .reset-button,
+.form-container .form .button-container .reset-button-container button{
   position: relative;
   text-align: center;
   padding: 10px;
@@ -705,9 +706,14 @@ margin-top: 0.5rem;
   background: #191a20;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
   transition: all 0.2s ease-in-out;
+  
+  border: none; /* Ensuring no border for button */
+  cursor: pointer; /* Making the cursor a pointer */
+  width: 100%;
 }
 
-.form-container .form .button-container .reset-button-container .reset-button:hover {
+.form-container .form .button-container .reset-button-container .reset-button:hover,
+.form-container .form .button-container .reset-button-container button:hover {
   background: #128C7E;
   color: #faebd7;
 }
