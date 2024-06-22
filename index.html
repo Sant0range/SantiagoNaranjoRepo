@@ -300,7 +300,7 @@
       <div>
           <div class="form-container">
             <div >
-              <form class="form" name="contact" method="POST" data-netlify="true">
+              <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <span class="heading">Get in touch</span>
                 <input placeholder="Name" name="name" type="text" class="input" required="">
                 <input placeholder="Email" name="email"id="mail" type="email" class="input" required="">
@@ -309,6 +309,9 @@
                 <button class="send-button" name="send" type="submit">Send</button>
                 <div class="reset-button-container">
                     <button id="reset-btn" class="reset-button" name="reset">Reset</button>
+                </div>
+                <div style="display: none;">
+                  <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                 </div>
               </form>
             </div>

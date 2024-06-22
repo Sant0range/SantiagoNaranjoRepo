@@ -218,4 +218,18 @@ class NavigationPage {
     }
   )
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const resetButton = document.getElementById('reset-btn');
+    const form = document.querySelector('.form');
+
+    resetButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevenir el comportamiento predeterminado del botón
+        
+        // Clear the form fields
+        form.elements['name'].value = '';
+        form.elements['email'].value = '';
+        form.elements['message'].value = '';
+    });
+});
+
   new NavigationPage();
