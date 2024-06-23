@@ -111,7 +111,6 @@ body {
 
 .button {
   margin-left: 7px;
-  margin-right: 50px;
   position: relative;
   width: 17.5%;
   height: 50px;
@@ -318,7 +317,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 90vh;
   position: relative;
   background: #1e1f26;
   text-align: center;
@@ -327,23 +326,44 @@ button:hover {
 } 
 
 
- .slider {
+
+.sliderB {
   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 150vh;
+   height: 110vh;
    position: relative;
    text-align: center;
    background: #1e1f26e7;
    padding: 0 2em;
  } 
 
-.slider h1 {
+ .slider {
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 170vh;
+   position: relative;
+   text-align: center;
+   background: #1e1f26e7;
+   padding: 0 2em;
+ } 
+ 
+
+ .slider h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  letter-spacing: 0.5rem;
+  color: #faebd7;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.sliderB h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
   letter-spacing: 0.5rem;
   color: #faebd7;
   transition: all 0.3s ease;
@@ -377,21 +397,6 @@ a {
 }
 
 
-@media (min-width: 800px) {
-  .nav h1,
-  .slider h1 {
-    font-size: 5vw;
-  }
-
-  .nav h2,
-  .slider h2 {
-    font-size: 3vw;
-  }
-
-  .nav-tab {
-    font-size: 3vw;
-  }
-}
 
 /*Skils*/
 
@@ -489,10 +494,8 @@ margin-top: 0.5rem;
   
   grid-gap:3rem;
   padding: 1rem 80px;
-  margin-bottom: 20px;
   
   margin-top: 20px;
-  
 }
 
 .project-card{
@@ -610,6 +613,8 @@ margin-left: 20%;
 display:flex;
 grid-gap:1rem;
 padding: 0.5rem 200px;
+
+margin-bottom: 50px;
 }
 
 
@@ -621,6 +626,7 @@ padding: 0.5rem 200px;
   max-width: 700px;
   margin: 30px;
   background-color: #191a20;
+
   padding: 30px;
   border-left: 5px solid #03dac6;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
@@ -692,7 +698,8 @@ padding: 0.5rem 200px;
   padding: 10px;
   color: #faebd7;
   
-  border: none; /* Ensuring no border for button */
+  
+  border: 1px solid #128C7E;
   letter-spacing: 0.1rem;
   text-align: center;
   font-weight: 500;
@@ -737,37 +744,6 @@ padding: 0.5rem 200px;
 }
 /*contact form end*/
 
-@media screen and (max-width:990px){
- .skills-container{
- grid-tempLate-columns: repeat(2, 1fr);
- padding: 2rem 50px;
- }
-}
-
-@media screen and (max-width:650px){
- .skills-container{
- grid-tempLate-columns:2fr;
- padding: 2rem 50px;
- }
-}
-
-
-
-@media only screen and (min-width: 360px) {
-  .slider h1 {
-    font-size: 5vw;
-  }
-
-  .nav h2,
-  .slider h2 {
-    font-size: 2vw;
-    letter-spacing: 0.2vw;
-  }
-
-  .nav-tab {
-    font-size: 1.2vw;
-  }
-}
 
 .background {
   position: absolute;
@@ -904,4 +880,87 @@ footer {
 .loader span:nth-child(22) {
   -webkit-animation-delay: 2.1s;
   animation-delay: 2.1s;
+}
+
+
+/*Responsive Design*/
+
+
+ 
+
+
+/*Desktop first, beggining with the widthest*/
+
+@media screen and (max-width: 1920px){
+
+
+  .nav h2,
+  .slider h2 {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+  }
+
+  .nav-tab {
+    font-size: 1.2vw;
+  }
+
+}
+
+ @media screen and (max-width: 1024px) {
+
+  
+  .nav-tab {
+    font-size: 3.2vw;
+  }
+  
+
+  
+}
+
+
+@media screen and (max-width: 680px){
+
+  .nav h1 {
+    font-size: 10vw;
+  }
+
+  h3.span {
+    font-size: 4vw;
+    letter-spacing: 0.2em;
+  }
+
+  .nav h2,
+  .slider h2 {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+  }
+  
+  .nav-tab {
+    font-size: 3.2vw;
+  }
+  
+}
+
+@media screen and (max-width: 320px){
+
+
+  
+  h3.span {
+    font-size: 5vw;
+    letter-spacing: 0.1em;
+  }
+
+
+  .nav h2,
+  .slider h2 {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+  }
+
+  .nav-tab {
+    font-size: 4.2vw;
+  }
+  
+  
+
 }
