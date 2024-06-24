@@ -414,7 +414,7 @@ h1:hover {
 /*Section Skills*/
 
 .skills-section{
-padding-top: 20px;
+padding-top: 3.1vh;
 }
 
 .skills-container{
@@ -424,7 +424,7 @@ justify-content:center;
 align-items:center;
 text-align: center;
 grid-gap:1rem;
-padding: 1rem 80px;
+padding: 1rem 5.8vw;
 font-size: 1.2rem;
 }
 
@@ -440,7 +440,7 @@ cursor:pointer;
   
 background-color: #03dac6;
 transition: .5s;
-width: 120px;
+width: 8.7vw;
 }
 
 .skills-box:hover .skills-img{
@@ -999,6 +999,31 @@ footer {
    width: auto;
  }
 /*SectionA end*/
+
+/*Skills Section*/
+
+.slider h1 {
+  font-size: 7vw;
+  letter-spacing: 0.5rem;
+}
+
+.slider h2 {
+  margin-left: 5.1vw;
+  margin-top: 2vh;
+  font-size: 3.5vw;
+  letter-spacing: 0.3rem;
+}
+
+
+.skills-container{
+  display: grid;
+  grid-tempLate-columns: repeat(3, 1fr);
+  grid-gap:1rem;
+  padding: 1rem 5.8vw;
+  }
+  
+/*Skills Section End*/
+
   
 }
 
@@ -1088,6 +1113,35 @@ footer {
 
 
 /*SectionA end*/
+
+
+/*Skills Section*/
+
+
+.slider {
+  display: grid;
+  height: 300vh;
+  padding: 0 2em;
+
+} 
+.slider h1 {
+  margin-top: 30vh;
+  font-size: 10vw;
+  letter-spacing: 0.5rem;
+}
+
+.slider h2 {
+  font-size: 7vw;
+  letter-spacing: 0.4rem;
+}
+
+.skills-container{
+  display: grid;
+  grid-tempLate-columns: repeat(2, 1fr);
+  grid-gap:1rem;
+  padding: 1rem 5.8vw;
+  }
+
   
 }
 
