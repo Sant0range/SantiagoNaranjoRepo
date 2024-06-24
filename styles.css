@@ -105,7 +105,7 @@ body {
   margin-left: 7px;
   position: relative;
   width: 17.5%;
-  height: 50px;
+  height: 7.8vh;
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -120,24 +120,6 @@ body {
   color: #faebd7;
 }
 
-.buttoncv {
-  margin-left: 7px;
-  position: relative;
-  width: 17.5%;
-  height: 50px;
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  border: 2px solid #191a20;
-  background-color: #1e1f26;
-  overflow: hidden;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.774);
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-  font-size: 1vw;
-  color: #faebd7;
-}
 
 .button__icon {
   transition: all 0.5s ease;
@@ -145,9 +127,9 @@ body {
 
 .button .button__icon {
   position: absolute;
-  transform: translateX(109px);
+  transform: translateX(17vh);
   height: 100%;
-  width: 39px;
+  width: 2.8vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +137,7 @@ body {
 }
 
 .button .svg {
-  width: 20px;
+  width: 1.4vw;
   fill: #faebd7;
 }
 
@@ -163,6 +145,12 @@ body {
   
   padding-left: 10%;
 }
+
+ 
+.button__textmobile {
+  visibility: hidden;
+ }
+
 
 button:hover {
  background-color: #03dac6;
@@ -175,7 +163,7 @@ button:hover {
 }
 
 .button:hover .button__icon {
-  width: 185px;
+  width: 13vw;
   transform: translateX(0);
   padding-right: 25%;
 }
@@ -329,6 +317,12 @@ h1:hover {
   transform: translateY(-10px);
 }
 
+.imgmobile{
+  margin-top: 0vh;
+  height: 0vw;
+  visibility: hidden;
+}
+
 
 /* social buttoms */
 .cardsocial {
@@ -386,7 +380,7 @@ h1:hover {
 }
 
 .socialSvg {
-  width: 19px;
+  width: 1.3vw;
 }
 
 .socialSvg path {
@@ -933,13 +927,42 @@ footer {
   .nav-tab {
     font-size: 3.2vw;
   }
+
+  
+  h3.span {
+    font-size: 3vw;
+    letter-spacing: 0.2em;
+  }
+
   /* nav section end*/
 
   /*Section A*/
   .socialContainer {
-    width: 5.6vw;
-    height: 5.6vw;
+    width: 8vw;
+    height: 7vw;
   }
+
+  
+  .socialSvg {
+    width: 3vw;
+  }
+
+
+  .button{
+    height: 7vw;
+  }
+
+  .button__text {
+    font-size: 0px;
+    visibility: hidden;
+  }
+  
+  
+  .button__textmobile {
+  font-size: 3vw;
+  visibility: visible;
+ }
+
 
   .sliderA {
     display: grid;
@@ -985,12 +1008,12 @@ footer {
 
   /* nav section*/
   .nav h1 {
-    font-size: 10vw;
+    font-size: 8vw;
   }
 
   h3.span {
-    font-size: 4vw;
-    letter-spacing: 0.2em;
+    font-size: 5vw;
+    letter-spacing: 0.01em;
   }
 
   .nav h2,
@@ -1010,29 +1033,35 @@ footer {
     width: 10vw;
     height: 11vw;
   }
+  
+  .socialSvg {
+    width: 5vw;
+  }
+
+
+  .button{
+    
+    height: 11vw;
+  }
+
 
   .sliderA {
     display: grid;
-    height: 100vh;
+    height: 115vh;
     padding: 0 2em;
  
   } 
  
   .sliderA h1 {
-   font-size: 8vw;
+   font-size: 7vw;
    margin: 0;
-   margin-bottom: 4vh;
-   margin-left: 5.1vw;
-   margin-top: 40px;
-   margin-right: 80px;
-   padding-bottom: 0.5rem;
+   margin-bottom: 1vh;
    letter-spacing: 0.5rem;
  }
  
  .sliderA h2 {
-   margin-left: 5.1vw;
-   margin-top: 4.6px;
-   font-size: 7vw;
+   margin-left: 4.1vw;
+   font-size: 6vw;
    letter-spacing: 0.3rem;
  }
  
@@ -1042,15 +1071,21 @@ footer {
  }
  
  
- .img {
+ .img{
    margin-top: 0vh;
    height: 0vw;
    visibility: hidden;
  }
 
- .button__text {
-  font-size: 4vw;
- }
+ .imgmobile{
+  margin-bottom: 5vh;
+  height: 40vw;
+  visibility:visible;
+  border-radius: 3%;
+  border: 6px solid #faebd7;
+}
+
+
 
 /*SectionA end*/
   
@@ -1081,7 +1116,15 @@ footer {
   
  /*Section A*/
  
- .button__text {
+ 
+ .sliderA {
+  display: grid;
+  height: 200vh;
+  padding: 0 2em;
+
+} 
+
+ .button__textmobile {
   font-size: 5vw;
  }
 
