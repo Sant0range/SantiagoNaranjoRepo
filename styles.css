@@ -146,10 +146,7 @@ body {
   padding-left: 10%;
 }
 
- 
-.button__textmobile {
-  visibility: hidden;
- }
+
 
 
 button:hover {
@@ -172,6 +169,28 @@ button:hover {
   background-color: #03dac6;
 }
 
+.sliderC {
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 110vh;
+   position: relative;
+   text-align: center;
+   background: #1e1f26e7;
+   padding: 0 2em;
+ } 
+
+ .sliderC h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
+  letter-spacing: 0.5rem;
+  color: #faebd7;
+  transition: all 0.3s ease;
+  z-index: 3;
+  margin-top: 5vh;
+}
+ 
 .sliderB {
   display: flex;
    flex-direction: column;
@@ -189,7 +208,7 @@ button:hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 170vh;
+   height: 150vh;
    position: relative;
    text-align: center;
    background: #1e1f26e7;
@@ -251,7 +270,7 @@ a {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 95vh;
+   height: 110vh;
    position: relative;
    background: #1e1f26;
    text-align: center;
@@ -333,6 +352,10 @@ h1:hover {
   gap: 1.4vw;
 }
 
+.cardsocialMobile {
+  display: none;
+}
+
 
 /* for all social containers*/
 .socialContainer {
@@ -407,6 +430,9 @@ h1:hover {
 
 /* social buttoms end */
 
+.resumes {
+  display: none;
+}
 
 /*Section AboutMe End*/
 
@@ -489,10 +515,6 @@ box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.774);
 }
 
 
-.skills-title h3{
-color: #faebd7;
-margin-top: 0.5rem;
-}
 
 /* Skills End*/
 
@@ -625,22 +647,19 @@ margin-left: 20%;
 
 display:flex;
 grid-gap:1rem;
-padding: 0.5rem 200px;
+padding: 0.5rem 14vw;
 
-margin-bottom: 50px;
+margin-bottom: 10vh;
 }
 
 
 /*Contact form*/
 
-
-
 .form-container {
-  max-width: 700px;
-  margin: 30px;
+  max-width: 51.2vw;
+  margin: 4.5vh;
   background-color: #191a20;
-
-  padding: 30px;
+  padding: 4.5vh;
   border-left: 5px solid #03dac6;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
 }
@@ -648,10 +667,10 @@ margin-bottom: 50px;
 .heading {
   display: block;
   color: #faebd7;
-  font: 1.5rem "Josefin Sans", sans-serif;
+  font: 2rem "ROBOTO", sans-serif;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  margin-bottom: 20px;
+  margin-bottom: 3.1vh;
 }
 
 .form-container .form .input {
@@ -659,8 +678,8 @@ margin-bottom: 50px;
   background-color: #1e1f26;
   border: none;
   outline: none;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 1.5vh;
+  margin-bottom: 3.1vh;
   
   transition: all 0.2s ease-in-out;
   border-left: 1px solid transparent;
@@ -669,6 +688,7 @@ margin-bottom: 50px;
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
   letter-spacing: 0.1rem;
+  font-size: 1vw;
   font-style: normal;
 }
 
@@ -924,6 +944,13 @@ footer {
  @media screen and (max-width: 1024px) {
 
   /* nav section*/
+
+  
+.nav-container {
+  width: 100%;
+  height: 10vh;
+}
+
   .nav-tab {
     font-size: 3.2vw;
   }
@@ -937,36 +964,93 @@ footer {
   /* nav section end*/
 
   /*Section A*/
-  .socialContainer {
-    width: 8vw;
-    height: 7vw;
-  }
-
   
   .socialSvg {
-    width: 3vw;
+    width: 5vw;
   }
 
 
-  .button{
-    height: 7vw;
-  }
-
-  .button__text {
-    font-size: 0px;
-    visibility: hidden;
-  }
+.cardsocial {
   
+  display: none;
+}
+
+.cardsocialMobile {
+  display: grid;
+  grid-tempLate-columns: repeat(5, 1fr);
+  justify-content:center;
+  align-items:center;
+  grid-gap:2vw;
+  padding: 1rem 5.8vw;
+  margin-top: 2vh;
+
+}
+
+
+.socialContainer {
+  width: 12vw;
+  height: 11vw;
+}
+
+
+
+.resumes {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  gap: 2vw;
+}
+
+
+.button {
+  margin-left: 7px;
+  width: 38vw;
+  height: 7.8vh;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.774);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 4vw;
+  margin-bottom: 10vh;
+}
+
+
+.button__icon {
+  transition: all 0.5s ease;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(17.5vh);
+  height: 100%;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #128C7E;
+}
+
+.button .svg {
+  width: 4.5vw;
+  fill: #faebd7;
+}
+
+.button__text {
   
-  .button__textmobile {
-  font-size: 3vw;
-  visibility: visible;
- }
+  padding-left: 5%;
+}
+
+
+.button:hover .button__icon {
+  width: 38vw;
+  transform: translateX(0);
+  padding-right: 9%;
+}
 
 
   .sliderA {
     display: grid;
-    height: 95vh;
+    height: 120vh;
     padding: 0 2em;
  
   } 
@@ -983,18 +1067,18 @@ footer {
  .sliderA h2 {
    margin-left: 5.1vw;
    margin-top: 4.6px;
-   font-size: 3.5vw;
+   font-size: 5vw;
    letter-spacing: 0.3rem;
  }
  
  .sliderA p {
    margin-top: 20px;
-   font-size: 3vw;
+   font-size: 4vw;
  }
  
  
  .img {
-   margin-top: 12vh;
+   margin-top: 22vh;
    height: 35vw;
    width: auto;
  }
@@ -1003,7 +1087,35 @@ footer {
 
 /*Skills Section*/
 
+.skills-img{
+  width:15vw;
+  height:15vw;
+  position: relative;
+  background-color: #1e1f26;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: .5s;
+  border: 2px solid #191a20;
+  box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.774);
+  }
+
+  
+.skills-icons{
+  width:8vw;
+  height: 8vw;
+  z-index:2;
+  }
+  
+
+.skills-box{
+  padding: 2vw;
+  cursor:pointer;
+  }
+  
+
 .slider h1 {
+  margin-top: 5vh;
   font-size: 7vw;
   letter-spacing: 0.5rem;
 }
@@ -1015,6 +1127,23 @@ footer {
   letter-spacing: 0.3rem;
 }
 
+
+.skills-title{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  }
+
+.skills-title:before{
+  bottom: 0;
+  width:15vw;
+  height:0.5vh;
+  border-radius: 0 2px 2px 0;
+  z-index: 3;
+  }
 
 .skills-container{
   display: grid;
@@ -1031,6 +1160,12 @@ footer {
 .sliderB {
    height: 160vh;
  } 
+
+
+
+.sliderB h1{
+  font-size: 7vw;
+}
 
 .project-container{
   display: grid;
@@ -1088,6 +1223,96 @@ footer {
   margin-left: 10px;
 }
 
+
+/*Project section end*/
+
+/*Contact form*/
+
+.sliderC {
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 110vh;
+ } 
+
+ .sliderC h1{
+  font-size: 7vw;
+ }
+
+.form-container {
+  max-width: 98vw;
+  
+  margin-left: 2vh;
+  background-color: #191a20;
+  padding: 4.5vh;
+}
+
+.heading {
+  text-align: left;
+  color: #faebd7;
+  font: 5vw "ROBOTO", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3.1vh;
+}
+
+.form-container .form .input {
+  font-size: 4vw;
+}
+
+
+.form-container .form .textarea {
+  max-height: 25vh;
+  font-size: 4vw;
+  font-weight: 300;
+}
+
+
+.form-container .form .button-container {
+  margin-top: 2vh;
+  display: flex;
+  gap: 3vw;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #128C7E;
+  padding: 3vw;
+  font-size: 3vw;
+  color: #faebd7;
+
+}
+
+.form-container .form .button-container .reset-button-container .reset-button,
+.form-container .form .button-container .reset-button-container button{
+  position: relative;
+  text-align: center;
+  padding: 4vw;
+  color: #03dac6;
+  font-size: 3vw;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+/*form section end*/
+/*footer*/
+
+footer {
+  position: absolute;
+  background: #191a20;
+  color: #faebd7;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  box-shadow: 50px 0px 50px rgba(0, 0, 0, 0.733);
+}
+
+.footer {
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  font-size: 5vw;
+}
 
 }
 
@@ -1311,9 +1536,6 @@ footer {
 
 } 
 
- .button__textmobile {
-  font-size: 5vw;
- }
 
  /*Projects Section*/
 
