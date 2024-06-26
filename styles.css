@@ -499,16 +499,16 @@ margin-top: 0.5rem;
 /*Projects section*/
 
 .project-container{
-  display: flex;
+  display: grid;
   grid-tempLate-columns: repeat(3, 1fr);
   justify-content:center;
   align-items:center;
   text-align: center;
   
   grid-gap:3rem;
-  padding: 1rem 80px;
+  padding: 1rem ;
   
-  margin-top: 20px;
+  margin-top: 3.12vh;
 }
 
 .project-card{
@@ -518,8 +518,8 @@ margin-top: 0.5rem;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.774);
   border-radius: 5%;
   padding: 15px;
-  width: 25%;
-  height: 105%;
+  width: 20vw;
+  height: 60vh;
   
   transition: all 0.5s ease;
   
@@ -546,7 +546,7 @@ margin-top: 0.5rem;
   border-radius: 4%;
   border: 3px solid #faebd7;
   width: 95%;
-  height: 140px;
+  height: 21vh;
   
   
   transition: all 0.5s ease;
@@ -576,8 +576,8 @@ margin-top: 0.5rem;
 }
 
 .pbutton{
-  width: 170px;
-  height: 50px;
+  width: 12.44vw;
+  height: 7.8vh;
   border: 2px solid #191a20;
   border-bottom:  2px solid  #128C7E;
   background-color: #1e1f26;
@@ -589,8 +589,8 @@ margin-top: 0.5rem;
   border-radius: 5%;
   
   color: #faebd7;
-  margin-top: 12px;
-  margin-left: 9px;
+  margin-top: 1.8vh;
+  margin-left: 0.6vw;
 }
 
 .pbuttonweb:hover {
@@ -601,7 +601,7 @@ margin-top: 0.5rem;
 }
 
 .websvg{
-  width: 19px;
+  width: 1.39vw;
   margin-left: 10px;
 }
 
@@ -904,7 +904,7 @@ footer {
 
 /*Desktop first, beggining with the widthest*/
 
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1420px){
 
 
   /* nav section*/
@@ -998,6 +998,7 @@ footer {
    height: 35vw;
    width: auto;
  }
+
 /*SectionA end*/
 
 /*Skills Section*/
@@ -1024,9 +1025,71 @@ footer {
   
 /*Skills Section End*/
 
-  
+/*Projects Section*/
+
+
+.sliderB {
+   height: 160vh;
+ } 
+
+.project-container{
+  display: grid;
+  grid-tempLate-columns: repeat(2, 1fr);
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  margin-top: 3.12vh;
 }
 
+
+.project-card{
+  display: block;
+  border: 4px solid #191a20;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.774);
+  border-radius: 5%;
+  padding: 15px;
+  width: 44vw;
+  height: 70vw;
+  transition: all 0.5s ease;
+
+  padding-bottom: 5vh;
+}
+
+.ptitlecard{
+  margin-top: 2vw;
+  font-size: 4vw;
+}
+.pcard{
+  
+  margin-top: 2vw;
+  font: 0.9rem "Josefin Sans", sans-serif;
+  color: #faebd7;
+  margin-top: 0.5rem;
+  font-size: 3vw;
+}
+
+
+.imgproject{
+  height: 16vh;
+
+}
+
+.pbutton{
+  width: 30vw;
+  height: 5vh;
+  margin-top: 1.8vh;
+  margin-left: 0.6vw;
+  font-size: 3vw;
+}
+
+
+.websvg{
+  width: 3vw;
+  margin-left: 10px;
+}
+
+
+}
 
 @media screen and (max-width: 680px){
 
@@ -1142,10 +1205,80 @@ footer {
   padding: 1rem 5.8vw;
   }
 
+
+  
+/*Projects Section*/
+
+
+.sliderB {
+  height: 260vh;
+} 
+
+.sliderB H1 {
+  font-size: 10vw;
+} 
+
+.project-container{
+ display: grid;
+ grid-tempLate-columns: repeat(1, 1fr);
+ justify-content:center;
+ align-items:center;
+ text-align: center;
+ margin-top: 3.12vh;
+}
+
+
+.project-card{
+ display: block;
+ border: 4px solid #191a20;
+ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.774);
+ border-radius: 5%;
+ padding: 15px;
+ width: 86vw;
+ height: 150vw;
+ padding-bottom: 5vh;
+}
+
+.ptitlecard{
+ margin-top: 2vw;
+ font-size: 10vw;
+ 
+}
+
+.pcard{
+ 
+ margin-top: 2vw;
+ font: 0.9rem "Josefin Sans", sans-serif;
+ color: #faebd7;
+ margin-top: 0.5rem;
+ font-size: 6vw;
+}
+
+
+.imgproject{
+ height: 20vh;
+
+}
+
+.pbutton{
+ width: 57vw;
+ height: 5vh;
+ margin-top: 1.8vh;
+ margin-left: 0.6vw;
+ font-size: 6vw;
+}
+
+
+.websvg{
+ width: 6vw;
+ margin-left: 10px;
+}
+
+
   
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 380px){
 
 
   /* nav section*/
@@ -1181,5 +1314,51 @@ footer {
  .button__textmobile {
   font-size: 5vw;
  }
+
+ /*Projects Section*/
+
+
+.sliderB {
+  height: 340vh;
+} 
+
+.project-card{
+ display: block;
+ border: 4px solid #191a20;
+ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.774);
+ border-radius: 5%;
+ padding: 15px;
+ width: 86vw;
+ height: 155vw;
+ padding-bottom: 5vh;
+}
+
+.ptitlecard{
+ margin-top: 2vw;
+ font-size: 10vw;
+ 
+}
+
+.pcard{
+ 
+ margin-top: 2vw;
+ font: 0.9rem "Josefin Sans", sans-serif;
+ color: #faebd7;
+ margin-top: 0.5rem;
+ font-size: 6vw;
+}
+
+
+.imgproject{
+ height: 25vh;
+
+}
+
+.pbutton{
+ width: 57vw;
+ height: 8vh;
+ font-size: 6vw;
+}
+
 
 }
