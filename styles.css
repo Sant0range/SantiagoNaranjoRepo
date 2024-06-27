@@ -962,7 +962,7 @@ footer {
   
   .nav-tab:hover {
     color: #faebd7;
-    background: #1e1f26;
+    background: #191a20;
     transition: all 0.5s ease;
   }
 
@@ -1328,6 +1328,54 @@ footer {
 
 }
 
+
+@media only screen and (max-width: 950px) and (max-height: 500px) {
+
+  .slider{
+    height: 600vh;
+  }
+  .sliderA{
+    height: 300vh;
+  }
+
+  .button {
+    height: 16vh;
+  }
+  
+  .button .button__icon {
+    transform: translateX(50vh);
+  }
+  
+
+  .sliderB{
+    height: 350vh;
+  }
+
+  
+.project-card{
+  width: 44vw;
+  height: 70vw;
+}
+
+
+.imgproject{
+  height: 46vh;
+
+}
+
+.pbutton{
+  width: 30vw;
+  height: 20vh;
+}
+
+
+  .sliderC{
+    height: 250vh;
+  }
+
+}
+
+
 @media screen and (max-width: 680px){
 
 
@@ -1562,7 +1610,7 @@ width: 15vw;
  border-radius: 5%;
  padding: 15px;
  width: 86vw;
- height: 155vw;
+ height: 140vw;
  padding-bottom: 5vh;
 }
 
@@ -1578,7 +1626,7 @@ width: 15vw;
  font: 0.9rem "Josefin Sans", sans-serif;
  color: #faebd7;
  margin-top: 0.5rem;
- font-size: 6vw;
+ font-size: 5vw;
 }
 
 
@@ -1666,6 +1714,8 @@ footer {
 
   
 }
+
+
 
 /*Projects Section End*/
 
