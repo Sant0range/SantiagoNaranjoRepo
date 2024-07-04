@@ -7,7 +7,8 @@
 }
 
 #particles-js{
-  background: #1e1f26;
+  background: 
+  linear-gradient(#faebd7, #128C7E);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -19,6 +20,7 @@
 body {
   font-family: "ROBOTO", sans-serif;
 }
+
 
 
 /*Configuracion*/
@@ -42,7 +44,7 @@ body {
 }
 
 .config a {
-  color: #fff;
+  color: #128C7E;
   font-size: 2vw;
 }
 
@@ -53,7 +55,7 @@ body {
   margin: 0;
   padding-bottom: 0rem;
   letter-spacing: 0.5rem;
-  color: #faebd7;
+  color: #128C7E;
   transition: all 0.3s ease;
   z-index: 15;
 }
@@ -66,9 +68,9 @@ body {
   appearance: none;
   width: 4.39vw;
   height: 4.36vh;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #faebd7), color-stop(50%, #1e1f26)) no-repeat;
-  background: -o-linear-gradient(left, #faebd7 50%, #1e1f26 50%) no-repeat;
-  background: linear-gradient(to right, #faebd7 50%, #1e1f26 50%) no-repeat;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #faebd7), color-stop(50%, #128C7E)) no-repeat;
+  background: -o-linear-gradient(left, #faebd7 50%, #128C7E 50%) no-repeat;
+  background: linear-gradient(to right, #faebd7 50%, #128C7E 50%) no-repeat;
   background-size: 205%;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -87,9 +89,9 @@ body {
   position: absolute;
   top: 6px;
   left: 0.438em;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #faebd7), color-stop(50%, #1e1f26)) no-repeat;
-  background: -o-linear-gradient(left, #faebd7 50%, #1e1f26 50%) no-repeat;
-  background: linear-gradient(to right, #faebd7 50%, #1e1f26 50%) no-repeat;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #faebd7), color-stop(50%, #128C7E)) no-repeat;
+  background: -o-linear-gradient(left, #faebd7 50%, #128C7E 50%) no-repeat;
+  background: linear-gradient(to right, #faebd7 50%, #128C7E 50%) no-repeat;
   background-size: 205%;
   background-position: 100%;
   border-radius: 50%;
@@ -122,7 +124,7 @@ body {
   align-items: center;
   height: 93vh;
   position: relative;
-  background: #1e1f26;
+  background: #faebd7;
   text-align: center;
   padding: 0 2em;
 } 
@@ -134,7 +136,7 @@ body {
   margin: 0;
   padding-bottom: 0.5rem;
   letter-spacing: 0.5rem;
-  color: #faebd7;
+  color: #128C7E;
   transition: all 0.3s ease;
   z-index: 3;
 }
@@ -146,18 +148,18 @@ body {
   margin: 0;
   padding-bottom: 0rem;
   letter-spacing: 0.5rem;
-  color: #faebd7;
+  color: #1e1f26;
   transition: all 0.3s ease;
   z-index: 3;
 }
 
 .nava {
-  color: #faebd7; /* Cambia el color a azul */
+  color: #1e1f26; /* Cambia el color a azul */
 }
 
 
 .nava:hover {
-  color: #03dac6; /* Cambia el color a azul */
+  color: #1e1f26; /* Cambia el color a azul */
 }
 
 
@@ -171,7 +173,7 @@ body {
   width: 100%;
   height: 75px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background: #191a20;
+  background: #128C7E;
   z-index: 10;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -200,7 +202,7 @@ body {
 }
 
 .nav-tab:hover {
-  color: #1e1f26;
+  color: #128C7E;
   background: #03dac6;
   transition: all 0.5s ease;
 }
@@ -272,7 +274,7 @@ body {
 button:hover {
  background-color: #03dac6;
  transition: all 0.3s ease;
- color: #faebd7;
+ color: #1e1f26;
 }
 
 .button:hover .button__text {
@@ -297,7 +299,7 @@ button:hover {
    height: 110vh;
    position: relative;
    text-align: center;
-   background: #1e1f26e7;
+   background: #faebd7;
    padding: 0 2em;
  } 
 
@@ -305,7 +307,7 @@ button:hover {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
   letter-spacing: 0.5rem;
-  color: #faebd7;
+  color: #1e1f26;
   transition: all 0.3s ease;
   z-index: 3;
   margin-top: 5vh;
@@ -319,7 +321,7 @@ button:hover {
    height: 110vh;
    position: relative;
    text-align: center;
-   background: #1e1f26e7;
+   background: #faebd7;
    padding: 0 2em;
  } 
 
@@ -340,7 +342,7 @@ button:hover {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
   letter-spacing: 0.5rem;
-  color: #faebd7;
+  color: #1e1f26;
   transition: all 0.3s ease;
   z-index: 3;
 }
@@ -349,7 +351,7 @@ button:hover {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
   letter-spacing: 0.5rem;
-  color: #faebd7;
+  color: #1e1f26;
   transition: all 0.3s ease;
   z-index: 3;
 }
@@ -360,7 +362,7 @@ button:hover {
   letter-spacing: 0.3rem;
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
-  color: #faebd7;
+  color: #1e1f26;
   z-index: 4;
 }
 h3.span {
@@ -368,7 +370,7 @@ h3.span {
   letter-spacing: 0.2em;
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
-  color: #faebd7;
+  color: #1e1f26;
   z-index: 4;
   margin-bottom: 5vw;
 }
@@ -408,13 +410,13 @@ a {
   padding-bottom: 0.5rem;
   letter-spacing: 0.5rem;
   color: #faebd7;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   z-index: 3;
 }
 
 h1:hover {
   transform: translate3d(0, -10px, 22px);
-  color: #03dac6;
+  color: #faebd7;
 }
 
 
@@ -913,8 +915,8 @@ margin-bottom: 10vh;
   z-index: 0;
 }
 .loader span {
-  color: #faebd7;
-  text-shadow: 0 0 0 #faebd7;
+  color: #128C7E;
+  text-shadow: 0 0 0 #128C7E;
   -webkit-animation: loading 1s ease-in-out infinite alternate;
   animation: loading 1s ease-in-out infinite alternate;
 }
@@ -943,15 +945,15 @@ footer {
 
 @-webkit-keyframes loading {
   to {
-    text-shadow: 20px 0 70px #03dac6;
-    color: #03dac6;
+    text-shadow: 20px 0 70px #128C7E;
+    color: #128C7E;
   }
 }
 
 @keyframes loading {
   to {
-    text-shadow: 20px 0 70px #03dac6;
-    color: #03dac6;
+    text-shadow: 20px 0 70px #128C7E;
+    color: #128C7E;
   }
 }
 
@@ -1071,7 +1073,7 @@ footer {
   
   
   .config a {
-    color: #fff;
+    color: #128C7E;
     font-size: 4vw;
   }
   
@@ -1548,7 +1550,7 @@ footer {
 
   
   .config a {
-    color: #fff;
+    color: #128C7E;
     font-size: 7vw;
   }
   
@@ -1920,7 +1922,7 @@ footer {
 
   
   .config a {
-    color: #fff;
+    color: #128C7E;
     font-size: 6vw;
   }
   

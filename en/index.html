@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles.css">
+  <link id="theme-stylesheet" rel="stylesheet" href="../light.css" disabled>
   <link rel="icon" href="../images/favicon.png" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../app.js" defer></script>
@@ -15,22 +16,59 @@
   <title>Santiago Naranjo</title>
 </head>
 <body>
-
-  
   <div>
     <ul class="config">
-        <li class="config">
-          <p class="config">
-            <a class="nava" href="../es/index.html">ES</a> <a>/</a> <a class="nava" href="#">EN</a> 
-          </p>
-        </li>
-        <li >
-            <label class="theme-switch">
-                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
-            </label>
-        </li>
+      <li class="config">
+        <p class="config">
+          <a class="nava" href="../es/index.html" onclick="setLanguage('es')">ES</a> <a>/</a> <a class="nava" href="../en/index.html" onclick="setLanguage('en')">EN</a> 
+        </p>
+      </li>
+      <li>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+        </label>
+      </li>
     </ul>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var themeStylesheet = document.getElementById('theme-stylesheet');
+      var themeToggle = document.getElementById('theme-toggle');
+      var isLightTheme = localStorage.getItem('isLightTheme') === 'true';
+
+      // Set the initial state of the theme
+      if (isLightTheme) {
+        themeStylesheet.removeAttribute('disabled');
+        themeToggle.checked = true;
+      } else {
+        themeStylesheet.setAttribute('disabled', 'disabled');
+        themeToggle.checked = false;
+      }
+
+      themeToggle.addEventListener('change', function() {
+        if (this.checked) {
+          themeStylesheet.removeAttribute('disabled');
+          localStorage.setItem('isLightTheme', 'true');
+        } else {
+          themeStylesheet.setAttribute('disabled', 'disabled');
+          localStorage.setItem('isLightTheme', 'false');
+        }
+      });
+    });
+
+    function setLanguage(lang) {
+      var isLightTheme = document.getElementById('theme-toggle').checked;
+      localStorage.setItem('isLightTheme', isLightTheme);
+
+      if (lang === 'es') {
+        window.location.href = '#'; // URL de la página en español
+      } else if (lang === 'en') {
+        window.location.href = '../en/index.html'; // URL de la página en inglés
+      }
+    }
+  </script>
+
 
   <section class="nav" >
 
