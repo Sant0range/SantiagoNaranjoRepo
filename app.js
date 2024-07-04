@@ -1,4 +1,5 @@
 class NavigationPage {
+  
     constructor() {
     this.currentId = null;
     this.currentTab = null;
@@ -105,11 +106,13 @@ class NavigationPage {
     }
   }
 
+  
+
   particlesJS(
     {
       "particles": {
         "number": {
-          "value": 45,
+          "value": 50,
           "density": {
             "enable": true,
             "value_area": 800
@@ -183,7 +186,7 @@ class NavigationPage {
             "mode": "bubble"
           },
           "onclick": {
-            "enable": true,
+            "enable": false,
             "mode": "push"
           },
           "resize": true
@@ -231,5 +234,7 @@ class NavigationPage {
         form.elements['message'].value = '';
     });
 });
+
+
 
   new NavigationPage();
