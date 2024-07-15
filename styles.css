@@ -297,7 +297,7 @@ button:hover {
    height: 110vh;
    position: relative;
    text-align: center;
-   background: #1e1f26e7;
+   background: #1e1f267e;
    padding: 0 2em;
  } 
 
@@ -344,7 +344,7 @@ button:hover {
    height: auto;
    position: relative;
    text-align: center;
-   background: #1e1f26e7;
+   background: #1e1f2646;
    padding: 5vw;
  } 
  
@@ -1323,6 +1323,25 @@ footer {
   }
   
 
+  
+.skills-box:hover h3{
+  color: #faebd7;
+  font-size: 2vw;
+  visibility: visible;
+  z-index: 11;
+  transition: .5s;
+}
+
+
+.skills-box h3{
+  color: #faebd7;
+  font-size: 2vw;
+  visibility: hidden;
+  
+  
+}
+
+
 .slider h1 {
   margin-top: 5vh;
   font-size: 7vw;
@@ -1718,15 +1737,15 @@ footer {
 }
 
 .button .button__icon {
-  position: absolute;
-  transform: translateX(11.5vh);
+  transform: translateX(calc(100% - -80% - 10px));
   height: 100%;
-  width: 10vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: calc(50% - 10%);
+  padding: 6%;
+  align-content: center;
   background-color: #128C7E;
 }
+
+
 
 .button .svg {
   width: 6vw;
@@ -1798,6 +1817,25 @@ footer {
   padding: 2vw;
   cursor:pointer;
   }
+
+    
+.skills-box:hover h3{
+  color: #faebd7;
+  font-size: 5vw;
+  visibility: visible;
+  z-index: 11;
+  transition: .5s;
+}
+
+
+.skills-box h3{
+  color: #faebd7;
+  font-size: 5vw;
+  visibility: hidden;
+  
+  
+}
+
   
 
 .skills-title{
@@ -1873,7 +1911,7 @@ width: 15vw;
 
 .ptitlecard{
  margin-top: 2vw;
- font-size: 10vw;
+ font-size: 9vw;
  
 }
 
@@ -1897,7 +1935,7 @@ width: 15vw;
  height: 7vh;
  margin-top: 1.8vh;
  margin-left: 0.6vw;
- font-size: 6vw;
+ font-size: 5vw;
 }
 
 
@@ -1929,7 +1967,7 @@ width: 15vw;
 }
 
 .heading {
-  font: 9vw "ROBOTO", sans-serif;
+  font: 8vw "ROBOTO", sans-serif;
   font-weight: 500;
 }
 

@@ -21,7 +21,12 @@ class NavigationPage {
     event.preventDefault();
     let scrollTop =
       $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
-    $("html, body").animate({ scrollTop: scrollTop }, 600);
+      
+      if (window.innerWidth < 768) {  // Ajusta el umbral según sea necesario
+        $("html, body").scrollTop(scrollTop);
+      } else {
+        $("html, body").animate({ scrollTop: scrollTop }, 600);
+      }
   }
 
   onScroll() {
