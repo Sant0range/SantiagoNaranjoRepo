@@ -316,23 +316,36 @@ button:hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 110vh;
+   height: auto;
    position: relative;
    text-align: center;
    background: #1e1f26e7;
-   padding: 0 2em;
+   padding: 5em;
  } 
+
+ 
+ .sliderB h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5vw;
+  letter-spacing: 0.2rem;
+  color: #faebd7;
+  transition: all 0.3s ease;
+  z-index: 3;
+  margin-top: 2vw;
+}
+
+
 
  .slider {
   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 150vh;
+   height: auto;
    position: relative;
    text-align: center;
    background: #1e1f26e7;
-   padding: 0 2em;
+   padding: 5vw;
  } 
  
 
@@ -354,6 +367,15 @@ button:hover {
   z-index: 3;
 }
 
+
+.sliderB h2 {
+  font-size: 2vw;
+  letter-spacing: 0.3rem;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
 
 .slider h2 {
   font-size: 2vw;
@@ -582,6 +604,24 @@ padding: 1rem;
 cursor:pointer;
 }
 
+
+.skills-box:hover h3{
+  color: #fff;
+  font-size: 1.3vw;
+  visibility: visible;
+  z-index: 11;
+  transition: .5s;
+}
+
+
+.skills-box h3{
+  color: #fff;
+  font-size: 1.3vw;
+  visibility: hidden;
+  
+  
+}
+
 .skills-box:hover > .skills-title:after, 
 .skills-box:hover > .skills-title:before {
   
@@ -662,7 +702,7 @@ box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.774);
   border-radius: 5%;
   padding: 15px;
   width: 20vw;
-  height: 65vh;
+  height: auto;
   
   transition: all 0.5s ease;
   
@@ -691,6 +731,7 @@ box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.774);
   width: 95%;
   height: 21vh;
   
+  background-color: white;
   
   transition: all 0.5s ease;
 }
@@ -726,8 +767,7 @@ box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.774);
   width: 12.44vw;
   height: 7.8vh;
   border: 2px solid #191a20;
-  border-bottom:  2px solid  #128C7E;
-  background-color: #1e1f26;
+  background-color: #128C7E;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1327,7 +1367,7 @@ footer {
 
 
 .sliderB {
-   height: 160vh;
+   height: auto;
  } 
 
 
@@ -1335,6 +1375,16 @@ footer {
 .sliderB h1{
   font-size: 7vw;
 }
+
+
+.sliderB h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 6vw;
+  letter-spacing: 0.2rem;
+  color: #faebd7;
+}
+  
+  
 
 .project-container{
   display: grid;
@@ -1353,7 +1403,7 @@ footer {
   border-radius: 5%;
   padding: 10px;
   width: 44vw;
-  height: 70vw;
+  height: auto;
   transition: all 0.5s ease;
 
   padding-bottom: 5vh;
@@ -1507,13 +1557,13 @@ footer {
   
 
   .sliderB{
-    height: 350vh;
+    height: auto;
   }
 
   
 .project-card{
   width: 44vw;
-  height: 70vw;
+  height: auto;
 }
 
 
@@ -1700,7 +1750,8 @@ footer {
 
 
 .slider {
-   height: 290vh;
+   height: auto;
+   padding: 10vw;
  } 
  
 
@@ -1783,12 +1834,21 @@ width: 15vw;
 
 
 .sliderB {
-  height: 290vh;
+  height: auto;
 } 
 
 .sliderB H1 {
   font-size: 10vw;
 } 
+
+
+.sliderB h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 8vw;
+  letter-spacing: 0.2rem;
+  color: #faebd7;
+}
+
 
 .project-container{
  display: grid;
@@ -1807,7 +1867,7 @@ width: 15vw;
  border-radius: 5%;
  padding: 15px;
  width: 86vw;
- height: 140vw;
+ height: auto;
  padding-bottom: 5vh;
 }
 
@@ -2007,7 +2067,7 @@ footer {
 
 
 .sliderB {
-  height: 340vh;
+  height: auto;
 } 
 
 .project-card{
@@ -2017,7 +2077,7 @@ footer {
  border-radius: 5%;
  padding: 15px;
  width: 86vw;
- height: 155vw;
+ height: auto;
  padding-bottom: 5vh;
 }
 

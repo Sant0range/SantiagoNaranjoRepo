@@ -44,7 +44,7 @@ body {
 }
 
 .config a {
-  color: #128C7E;
+  color: #2C3E50;
   font-size: 2vw;
 }
 
@@ -55,7 +55,7 @@ body {
   margin: 0;
   padding-bottom: 0rem;
   letter-spacing: 0.5rem;
-  color: #128C7E;
+  color: #2C3E50;
   transition: all 0.3s ease;
   z-index: 15;
 }
@@ -154,12 +154,12 @@ body {
 }
 
 .nava {
-  color: #1e1f26; /* Cambia el color a azul */
+  color: #128C7E; /* Cambia el color a azul */
 }
 
 
 .nava:hover {
-  color: #1e1f26; /* Cambia el color a azul */
+  color: #128C7E; /* Cambia el color a azul */
 }
 
 
@@ -325,11 +325,11 @@ a {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   height: auto;
    position: relative;
    background: #faebd7b9;
    text-align: center;
-   padding: 0 2em;
+   padding: 3vw;
 
  } 
 
@@ -526,11 +526,11 @@ h1:hover {
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     height: 170vh;
+     height: auto;
      position: relative;
      text-align: center;
      background: #128c7e2d;
-     padding: 0 2em;
+     padding: 5vw;
    } 
    
   
@@ -569,6 +569,21 @@ font-size: 1.2rem;
 }
 
 
+.skills-box:hover h3{
+  color: #2C3E50;
+  font-size: 1.3vw;
+  visibility: visible;
+  
+ transition: .5s;
+}
+
+
+.skills-box h3{
+  color: #2C3E50;
+  font-size: 1.3vw;
+  visibility: hidden;
+  
+}
 
 .skills-box{
 padding: 1rem;
@@ -576,17 +591,22 @@ cursor:pointer;
 
 }
 
+
+
 .skills-box:hover > .skills-title:after, 
 .skills-box:hover > .skills-title:before {
   
 background-color: #2C3E50;
 transition: .5s;
 width: 8.7vw;
+
 }
+
 
 .skills-box:hover .skills-img{
   transform: translateY(-10px);
   background-color: #faebd7;
+  
 }
 
 .skills-title{
@@ -643,11 +663,11 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     height: 115vh;
+     height: auto;
      position: relative;
      text-align: center;
      background: #faebd7b9;
-     padding: 0 2em;
+     padding: 5em;
    } 
   
   
@@ -659,6 +679,18 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
     transition: all 0.3s ease;
     z-index: 3;
   }
+
+  
+  .sliderB h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 0.2rem;
+    color: #2C3E50;
+    transition: all 0.3s ease;
+    z-index: 3;
+    margin: 1vw;
+  }
+
 
 .project-container{
   display: grid;
@@ -676,12 +708,12 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
 .project-card{
   display: block;
   border: 4px solid #2C3E50;
-  background-color: #faebd7;
+  background-color: #f7f2eb;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
   border-radius: 5%;
   padding: 15px;
   width: 20vw;
-  height: 65vh;
+  height: auto;
   
   transition: all 0.5s ease;
   
@@ -709,7 +741,7 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
   border: 3px solid #2C3E50;
   width: 95%;
   height: 21vh;
-  
+  background-color: white;
   
   transition: all 0.5s ease;
 }
@@ -752,7 +784,7 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
   overflow: hidden;
   transition-duration: .3s;
   
-  color: #faebd7;
+  color: white;
   margin-top: 1.8vh;
   margin-left: 0.6vw;
 }
@@ -1259,8 +1291,8 @@ footer {
 
   .sliderA {
     display: grid;
-    height: 120vh;
-    padding: 0 2em;
+    height: auto;
+    padding: 3vw;
  
   } 
  
@@ -1364,14 +1396,39 @@ footer {
 
 
 .sliderB {
-   height: 160vh;
+   height: auto;
  } 
 
+ 
+ .sliderB h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
+  letter-spacing: 0.2rem;
+  color: #2C3E50;
+}
 
+
+
+ .skills-box:hover h3{
+  color: #2C3E50;
+  font-size: 3vw;
+  visibility: visible;
+  
+ transition: .5s;
+}
+
+
+.skills-box h3{
+  color: #2C3E50;
+  font-size: 3vw;
+  visibility: hidden;
+  
+}
 
 .sliderB h1{
   font-size: 7vw;
 }
+
 
 .project-container{
   display: grid;
@@ -1388,7 +1445,7 @@ footer {
   border-radius: 5%;
   padding: 10px;
   width: 44vw;
-  height: 70vw;
+  height: auto;
   transition: all 0.5s ease;
 
   padding-bottom: 5vh;
@@ -1517,9 +1574,6 @@ footer {
 
   
 
-  .slider{
-    height: 600vh;
-  }
   .sliderA{
     height: 300vh;
   }
@@ -1534,13 +1588,14 @@ footer {
   
 
   .sliderB{
-    height: 350vh;
+    height: auto;
   }
+  
 
   
 .project-card{
   width: 44vw;
-  height: 70vw;
+  height: auto;
 }
 
 
@@ -1654,8 +1709,8 @@ footer {
 
   .sliderA {
     display: grid;
-    height: 140vh;
-    padding: 0 2em;
+    height: auto;
+    padding: 2vw;
  
   } 
  
@@ -1724,7 +1779,8 @@ footer {
 
 
 .slider {
-   height: 290vh;
+   height: auto;
+   padding: 10vw;
  } 
  
 
@@ -1805,12 +1861,36 @@ width: 15vw;
 
 
 .sliderB {
-  height: 290vh;
+  height: auto;
 } 
 
 .sliderB H1 {
   font-size: 10vw;
 } 
+
+.sliderB h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 8vw;
+  letter-spacing: 0.2rem;
+  color: #2C3E50;
+}
+
+
+.skills-box:hover h3{
+  color: #2C3E50;
+  font-size: 5vw;
+  visibility: visible;
+  
+ transition: .5s;
+}
+
+
+.skills-box h3{
+  color: #2C3E50;
+  font-size: vw;
+  visibility: hidden;
+  
+}
 
 .project-container{
  display: grid;
@@ -1827,7 +1907,7 @@ width: 15vw;
  border-radius: 5%;
  padding: 15px;
  width: 86vw;
- height: 140vw;
+ height: auto;
  padding-bottom: 5vh;
 }
 
@@ -2012,8 +2092,8 @@ footer {
  
  .sliderA {
   display: grid;
-  height: 200vh;
-  padding: 0 2em;
+  height: auto;
+  padding: 2vw;
 
 } 
 
@@ -2022,7 +2102,7 @@ footer {
 
 
 .sliderB {
-  height: 340vh;
+  height: auto;
 } 
 
 .project-card{
@@ -2030,7 +2110,7 @@ footer {
  border-radius: 5%;
  padding: 15px;
  width: 86vw;
- height: 155vw;
+ height: auto;
  padding-bottom: 5vh;
 }
 
@@ -2043,8 +2123,7 @@ footer {
 .pcard{
  
  margin-top: 2vw;
- font: 0.9rem "Josefin Sans", sans-serif;
- color: #faebd7;
+ font: 0.1rem "Josefin Sans", sans-serif;
  margin-top: 0.5rem;
  font-size: 6vw;
 }
