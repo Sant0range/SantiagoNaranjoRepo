@@ -21,7 +21,7 @@ class NavigationPage {
     event.preventDefault();
     let scrollTop =
       $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
-      
+
       if (window.innerWidth < 768) {  // Ajusta el umbral según sea necesario
         $("html, body").scrollTop(scrollTop);
       } else {
@@ -111,6 +111,7 @@ class NavigationPage {
     }
   }
 
+  new NavigationPage();
   
 
   particlesJS(
@@ -242,4 +243,4 @@ class NavigationPage {
 
 
 
-  new NavigationPage();
+  
